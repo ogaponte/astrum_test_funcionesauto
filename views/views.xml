@@ -1,0 +1,37 @@
+<odoo>
+  <data>
+
+    <record model="ir.actions.act_window" id="hist_config_action">
+      <field name="name">Configuración histórico presupuesto</field>
+      <field name="res_model">historico.presupuesto.config</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- model.name form view -->
+    <record id="hist_config_form" model="ir.ui.view">
+      <field name="name">Configuración histórico presupuesto</field>
+      <field name="model">historico.presupuesto.config</field>
+      <field name="arch" type="xml">
+        <form string="Configuración histórico presupuesto">
+          <header>
+
+            <button name="borrado_almacenado_presupuesto" string="Ejecutar funcion!" type="object" class="oe_highlight"/>
+
+          </header>
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="borrado_primer_trimestre"/>
+              <field name="borrado_segundo_trimestre"/>
+              <field name="borrado_tercer_trimestre"/>
+              <field name="borrado_cuarto_trimestre"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <menuitem name="Configuración histórico presupuesto" id="menu_hist_config" parent="project.menu_project_config" action="hist_config_action"/>
+
+  </data>
+</odoo>
