@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Astrum Test Funciones Programadas Automáticas",
+    'name': "Astrum Test Funciones Programadas Automáticas asdasdas",
 
     'summary': """
         Test con Leo de Funciones Programadas""",
@@ -12,8 +12,12 @@
     'author': "InterGlobalCS",
     'website': "http://www.interglobalcs.com",
 
+
+
     'category': 'Uncategorized',
     'version': '0.1',
+
+
 
     'depends': ['base','project'],
 
