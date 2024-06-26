@@ -12,12 +12,8 @@
     'author': "InterGlobalCS",
     'website': "http://www.interglobalcs.com",
 
-
-
     'category': 'Uncategorized',
     'version': '0.1',
-
-
 
     'depends': ['base','project'],
 
