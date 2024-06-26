@@ -10,6 +10,7 @@ class HPresupuestoConfig(models.Model):
     _name = 'historico.presupuesto.config'
 
     name = fields.Integer(string="Año")
+    
     borrado_primer_trimestre = fields.Date(help="El primer día del primer trimestre")
     borrado_segundo_trimestre = fields.Date(help="El primer dia del segundo trimestre")
     borrado_tercer_trimestre = fields.Date(help="El primer dia del tercer trimestre")
